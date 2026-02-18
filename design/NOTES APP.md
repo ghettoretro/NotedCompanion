@@ -1,3 +1,26 @@
+# AdaptiveEngine: NOTES APP
+/**
+ * @PATH [design/NOTES APP.md]
+ * @REV [20260218-1529]
+ * @MODULE [SYSTEM_DOCUMENTATION]
+ * @STATUS [DRAFT | ACTIVE | DEPRECATED]
+ * @FILETYPE [ADR | CHANGE |SYS | PIR | PRD | RSP | GUIDE | SUPPORT/REFERENCE]
+ * @DESC []
+ * @CONTROLLED [X]
+ * -------------------------------------
+ * @TODO_START
+ * @TODO_END
+ * =====================================*/
+tts
+stt
+widget
+
+## Local "Storage" (The Firebase Replacement)
+When you aren't using Firestore, you have three "local" options for your notes and music metadata:
+**JSON Files:** For a simple note app, you literally just write to data.json on your desktop.
+**SQLite:** A "real" database that lives in a single file on your computer. Great for a music app where you need to search thousands of songs quickly.
+**LocalStorage / IndexedDB:** If you just want to run a React app in a browser tab without "installing" it, you can save your notes directly in the browser's internal memory.
+
 ## The "Note/Music" App Path: Electron vs. Tauri
 
 Since you’re already a React expert, you have two main routes for making a desktop app (an .exe on your machine): Electron: The industry standard (VS Code, Discord). It’s basically a Chrome browser window that has access to your hard drive. Pro: You can use all your React skills exactly as they are. Con: It’s a bit "heavy" on RAM, but for a solo local utility, who cares?
